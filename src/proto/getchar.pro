@@ -6,6 +6,7 @@ int stuff_empty(void);
 int readbuf1_empty(void);
 void typeahead_noflush(int c);
 void flush_buffers(int flush_typeahead);
+void flush_buffers_async(int flush_typeahead, void (*callback)());
 void ResetRedobuff(void);
 void CancelRedo(void);
 void saveRedobuff(save_redo_T *save_redo);
