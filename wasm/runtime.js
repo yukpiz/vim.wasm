@@ -24,7 +24,7 @@ const VimWasmRuntime = {
                 this.renderer = renderer;
                 this.bounceTimerToken = null;
                 this.onResize = this.onResize.bind(this);
-                window.addEventListener('resize', this.onResize); // TODO: passive: true
+                window.addEventListener('resize', this.onResize, { passive: true });
             }
 
             WindowResize.prototype.onVimInit = function() {

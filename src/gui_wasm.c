@@ -209,7 +209,7 @@ gui_mch_set_shellsize(
     int base_height,
     int direction)
 {
-    printf("TODO: set_shellsize %d %d %ld %ld\n", width, height, Rows, Columns);
+    // Nothing to do since DOM element is already rendered
 }
 
 /*
